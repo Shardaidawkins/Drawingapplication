@@ -1,0 +1,220 @@
+ html, body {
+  margin: 0px;
+  height: 100%;
+}
+
+.sidebar {
+	grid-area: sidebar;
+    width: 290px;
+    height: 826px;
+    background-color:black;
+    overflow-y: scroll;
+    
+}
+
+#content {
+	grid-area: content;
+    padding-left: 220px;
+    height: 560px;
+    width: 820px;
+    padding-top: 66px;
+    
+   
+    
+}
+
+.header {
+	grid-area: header;
+    color: black;
+	font-family: 'Roboto', sans-serif;
+    text-shadow: 3px 2px cyan;
+    height: 60px;
+    background-color:black;
+    font-family: 'Roboto', sans-serif;
+    font-family: 'Monoton', cursive;
+    font-size: 300px;
+    
+   
+  
+}
+h1.title{
+    
+    font-family: 'Roboto', sans-serif;
+    text-shadow: 3px 2px cyan;
+    height: 100px;
+    background-color:black;
+    font-family: 'Roboto', sans-serif;
+    font-family: 'Monoton', cursive;
+    font-size: 400px;
+}
+
+
+.footer{
+  grid-area: footer;
+}
+
+.sideBarItem{
+	max-height: 50px;
+	max-width: 50px;
+	padding:5px;
+    float: right;
+}
+
+.sideBarItem img{
+	max-height: 50px;
+	max-Width:50px;
+}
+
+.picker {
+	position: absolute;
+	top:0;
+	bottom:0;
+	left:0;
+	right:0;
+	margin: auto;
+	width:720px;
+	
+}
+
+#display{
+	width:100;
+	height: 100px;
+	background: white;
+	transition: background 100ms;
+	margin top: 30px;
+	border: 10px solid #000;
+}
+
+/*
+.colourPalette{
+	grid-area: colourP;
+	display:flex;
+	flex-direction:grid;
+	flex-flow: wrap;
+}
+
+
+
+.colourSwatches{
+	box-sizing: border-box;
+	width: 40px;
+	height: 40px;
+	max-height: 40px;
+	max-width: 40px;
+	margin: 5px;
+}
+*/
+
+
+.wrapper {
+		display: grid;
+		height: 100%;
+		grid-template-columns: 70px 230px  minmax(500px, 1fr);
+		grid-template-rows: 35px minmax(500px, 1fr) 160px;
+		grid-template-areas:
+               "header header header"
+				"sidebar content content"
+                "colourP colourP options";
+		background-color: white;
+    
+		color: #444;
+    text-align: center;
+    
+    
+	}
+.box {
+  background-color:black;
+  color: #fff;
+  font-size: 150%;
+}
+
+
+.header {
+    background-color:black;
+    color: black;
+    text-align: center;
+    font-size: 40px;
+    padding-left: 320px;
+    padding-top: 40px;
+    
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  min-height: 100%;
+  background: linear-gradient(#111, #222);
+  background: -webkit-linear-gradient(#111, #222);
+  background: -moz-linear-gradient(#111, #222);
+  background: -o-linear-gradient(#111, #222);
+}
+
+#colorwheel {
+  margin: 20px auto;
+  position: relative;
+  width:30px;
+  height: 50px;
+}
+
+span {
+  cursor: pointer;
+  position: absolute;
+  top: 200px;
+  left: 123px;
+  width: 40px;
+  height: 20px;
+  -ms-transform-origin: -100px 50%;
+  -webkit-transform-origin: -100px 50%;
+  -moz-transform-origin: -100px 50%;
+  -o-transform-origin: -100px 50%;
+  transform-origin: -100px 50%;
+  opacity: 0.1;
+}
+
+span:hover, span:active {
+  opacity: 1;
+  border-top-right-radius: 100%;
+  border-bottom-right-radius: 100%;
+}
+
+h1{
+    text-shadow: 3px 2px cyan;
+    color:black;
+    font-family: 'Roboto', sans-serif;
+    font-family: 'Monoton', cursive;
+    font-size: 20px;
+    text-align: center;
+}
+
+h2{
+    text-shadow: 3px 2px red;
+    color:black;
+    font-family: 'Roboto', sans-serif;
+    font-family: 'Monoton', cursive;
+    font-size: 20px;
+    text-align: center;
+}
+
+h3{
+    text-shadow: 3px 2px green;
+    color:black;
+    font-family: 'Roboto', sans-serif;
+    font-family: 'Monoton', cursive;
+    font-size: 20px;
+    text-align: center;
+}
+
+h4{
+    text-shadow: 3px 2px blue;
+    color:black;
+    font-family: 'Roboto', sans-serif;
+    font-family: 'Monoton', cursive;
+    font-size: 20px;
+    text-align: center;
+}
+
+.button{
+    
+    position: absolute;
+    top: 50%;
+}

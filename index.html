@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+  <head>
+      
+       
+      
+    <!-- Libraries -->
+    <script src="lib/p5.min.js"></script>
+    <script src="lib/jquery-3.2.1.slim.min.js" integrity="sha256-k2WSCIexGzOj3Euiig+TlR8gA0EmPjuc79OEeY5L45g=" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="iro.min.js"></script>
+    
+
+    <!-- Main sketch file -->
+    <script src="sketch.js"></script>
+ 
+    
+   
+    <!-- Javascript files -->
+    <link rel="stylesheet" media="screen" type="text/css" href="css/colorpicker.css" />
+    <script type="text/javascript" src="js/colorpicker.js"></script>
+    <script src="toolbox.js"></script>
+    <script src="colorPicker.js"></script>
+    <script src="helperFunctions.js"></script>
+    <script src="freehandTool.js"></script>
+    <script src="lineToTool.js"></script>
+    <script src="mirrorDrawTool.js"></script>
+	<script src="SprayCanTool.js"></script>
+    <script src="backgroundColourTool.js"></script>
+    <script src="stampTool.js"></script>
+    <script src="stampTool2.js"></script>
+	<script src="eraser.js"></script>
+	<script src="thickness.js"></script>
+    
+    <!-- CSS style sheet -->  
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" href="css/style.css">
+      
+     <!-- Link for fonts -->
+     <link href="https://fonts.googleapis.com/css?family=Monoton|Roboto" rel="stylesheet">
+      
+      
+  </head>
+  <body>
+	  <!-- The wrapper holds the canvas -->
+  	  <div class="wrapper">
+      
+      <div class="box header">The Drawing App 
+        
+        
+
+        
+          
+      </div>
+		<!-- Sidebar -->
+      <div class="box sidebar">
+		
+        
+         <!-- This holds the colour picker's display and scrolls --> 
+          <div class="picker"></div>
+		  
+		  <h1>Create your own colour using the sliders!</h1>
+		  
+          
+          		<h2>Red</h2>
+		  		<input type="range" min="0" max="255" step="1" id="red">
+		  		
+		  		<h3>Green</h3>
+		  		 <input type="range" min="0" max="255" step="1" id="green">
+		  		
+		  		<h4>Blue</h4>
+		  		<input type="range" min="0" max="255" step="1" id="blue">
+		  		
+		  
+		  		<div id= display></div>
+		  
+		  <!-- This holds the background colour selector --> 
+        <h1>Background Color</h1>
+        <button id="bgcolourwhiteButton">White</button>
+        <button id="bgcolourblackButton">Black</button>
+        <button id="bgcolourredButton">Red</button>
+        <button id="bgcolourblueButton">Blue</button>
+        <button id="bgcolourgreenButton">Green</button>
+        <button id="bgcolourorangeButton">Orange</button>
+          
+		  <!-- This holds the thickness button selector --> 
+          <h1>Thickness</h1>
+		  <button id="weightThin">Thin</button>
+		  <button id="weightNormal">Normal</button>
+		  <button id="weightMedium">Medium</button>
+		  <button id="weightThick">Thick</button>
+          
+		  <!-- This button clears the canvas --> 
+          <h1>Clear Canvas</h1>
+          <button id="clearButton">Clear</button>
+          
+		  <!-- This button saves the image --> 
+          <h1>Save Image</h1>
+          <button id="saveImageButton">Save Image</button>
+         
+		  <!-- This is the title for the extra tools --> 
+          <h1>Extra Tools</h1>
+          <br>
+          
+        
+
+         
+		</div>
+        
+        
+
+
+        <script src="colorpicker.js"></script>
+      
+        <div id="content">
+       
+        
+        </div>
+      
+    
+     
+	
+	
+	</div>
+  </body>
+</html>
